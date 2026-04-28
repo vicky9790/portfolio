@@ -1,0 +1,89 @@
+/* App Styles */
+.app-container {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Dynamic Liquid Background Effect */
+.app-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(0, 242, 255, 0.05) 0%,
+    rgba(189, 0, 255, 0.05) 25%,
+    rgba(10, 10, 15, 1) 100%
+  );
+  transition: background 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+main {
+  position: relative;
+  z-index: 10;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fallback since we use the reveal class directly in components */
+.reveal {
+  animation: none; /* Reset individual animations if needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-bg {
+    background: radial-gradient(
+      circle at 50% 50%,
+      rgba(0, 242, 255, 0.05) 0%,
+      rgba(10, 10, 15, 1) 100%
+    );
+  }
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--liquid-gradient);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 242, 255, 0.3);
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 242, 255, 0.5);
+}
