@@ -1,4 +1,5 @@
 import React from 'react';
+import { MapPin, GraduationCap, Briefcase, Zap } from 'lucide-react';
 import './About.css';
 
 const About = () => {
@@ -10,39 +11,44 @@ const About = () => {
       </div>
       <div className="about-content">
         <div className="about-text-container glass-panel reveal">
-          <p className="about-text">
-            I am a <strong>results-driven Full Stack Developer</strong> with a passion for building 
-            scalable, high-performance web applications. Currently pursuing my <strong>B.E. in Computer Science</strong> 
-            at Arjun College of Technology, I have maintained a strong academic record (CGPA: 8.1) while 
-            honing my technical expertise through real-world projects and internships.
+          <p className="about-text highlight">
+            I am a <strong>Full Stack Developer</strong> passionate about building real-world applications using React, Node.js, and databases. I enjoy solving problems, learning backend systems, and building scalable products.
           </p>
           <p className="about-text">
-            My core strength lies in the <strong>MERN stack</strong>, where I've delivered end-to-end 
-            applications featuring secure authentication, RESTful API integration, and responsive 
-            user interfaces. I am deeply committed to writing clean, well-documented code and 
-            following professional SDLC practices.
+            Completed B.E. in Computer Science at Arjun College of Technology (CGPA: 8.1), with a strong focus on full-stack development and scalable application design. I have developed impactful projects including <strong>Smart Village 1.1</strong>, restaurant ordering platforms, and complete e-commerce systems.
           </p>
           <p className="about-text">
-            With internships at <strong>Besant Technologies</strong> and <strong>Novi Tech</strong>, 
-            I've gained hands-on experience in both frontend and backend development, ranging from 
-            React component architecture to optimized MySQL database design.
+            Through practical internship experience, I've honed my capacity to write clean, modular code, design robust database architectures, and deliver highly responsive digital solutions.
           </p>
+          
           <div className="about-details-grid">
             <div className="detail-item">
-              <span className="detail-label">Location</span>
-              <span className="detail-value">Coimbatore, Tamil Nadu</span>
+              <div className="detail-icon"><MapPin size={20} /></div>
+              <div>
+                <span className="detail-label">Location</span>
+                <span className="detail-value">Coimbatore, Tamil Nadu</span>
+              </div>
             </div>
             <div className="detail-item">
-              <span className="detail-label">Education</span>
-              <span className="detail-value">B.E. Computer Science</span>
+              <div className="detail-icon"><GraduationCap size={20} /></div>
+              <div>
+                <span className="detail-label">Education</span>
+                <span className="detail-value">B.E. Computer Science (CGPA: 8.1)</span>
+              </div>
             </div>
             <div className="detail-item">
-              <span className="detail-label">Experience</span>
-              <span className="detail-value">MERN Stack Intern</span>
+              <div className="detail-icon"><Briefcase size={20} /></div>
+              <div>
+                <span className="detail-label">Experience</span>
+                <span className="detail-value">MERN Stack Intern</span>
+              </div>
             </div>
             <div className="detail-item">
-              <span className="detail-label">Available for</span>
-              <span className="detail-value">Full-time / Internship</span>
+              <div className="detail-icon"><Zap size={20} /></div>
+              <div>
+                <span className="detail-label">Available for</span>
+                <span className="detail-value">Full-Time SWE Roles</span>
+              </div>
             </div>
           </div>
         </div>

@@ -1,27 +1,35 @@
 /* About Section Styles */
 .about-section {
-  padding: 10rem 2rem;
+  padding: 8rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .about-content {
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
 }
 
 .about-text-container {
-  padding: 4rem;
+  padding: 3.5rem;
   max-width: 900px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .about-text {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   line-height: 1.8;
   color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.about-text.highlight {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: var(--text-primary);
   margin-bottom: 2rem;
-  font-weight: 300;
 }
 
 .about-text strong {
@@ -33,40 +41,73 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
-  margin-top: 4rem;
-  padding-top: 3rem;
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
   border-top: 1px solid var(--glass-border);
 }
 
 .detail-item {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.detail-icon {
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(0, 242, 255, 0.05);
+  border: 1px solid rgba(0, 242, 255, 0.15);
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(0, 242, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.detail-item:hover .detail-icon {
+  color: #fff;
+  background: var(--liquid-gradient);
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 242, 255, 0.2);
 }
 
 .detail-label {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   color: var(--accent-cyan);
-  font-weight: 600;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.25rem;
 }
 
 .detail-value {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--text-primary);
   font-weight: 500;
+  line-height: 1.4;
 }
 
 @media (max-width: 768px) {
+  .about-section {
+    padding: 6rem 1.5rem;
+  }
   .about-text-container {
-    padding: 2.5rem;
+    padding: 2rem 1.5rem;
   }
   .about-text {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+  }
+  .about-text.highlight {
+    font-size: 1.15rem;
   }
   .about-details-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.8rem;
   }
 }
