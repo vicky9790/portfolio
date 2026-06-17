@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vignesh P - Associate Developer Resume</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      color: #1a1a2e;
+      line-height: 1.5;
+      font-size: 10.5pt;
+      background: #fff;
+    }
+
+    .resume {
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.5in 0.6in;
+    }
+
+    /* ─── Header ─── */
+    .header {
+      text-align: center;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #2563eb;
+    }
+
+    .header h1 {
+      font-size: 22pt;
+      font-weight: 700;
+      color: #1a1a2e;
+      letter-spacing: 1px;
+      margin-bottom: 2px;
+    }
+
+    .header .tagline {
+      font-size: 11pt;
+      font-weight: 500;
+      color: #2563eb;
+      margin-bottom: 8px;
+    }
+
+    .header .contact-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 9.5pt;
+      color: #444;
+    }
+
+    .header .contact-row a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    .header .contact-row a:hover {
+      color: #2563eb;
+    }
+
+    .header .contact-row span::before {
+      content: '•';
+      margin-right: 6px;
+      color: #2563eb;
+    }
+
+    .header .contact-row span:first-child::before {
+      content: '';
+      margin-right: 0;
+    }
+
+    /* ─── Section ─── */
+    .section {
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-size: 11pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #2563eb;
+      border-bottom: 1px solid #dde3ee;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+
+    /* ─── Experience & Education Items ─── */
+    .item {
+      margin-bottom: 10px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .item-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+
+    .item-date {
+      font-size: 9.5pt;
+      color: #666;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .item-subtitle {
+      font-size: 10pt;
+      font-weight: 500;
+      color: #555;
+      margin-bottom: 3px;
+    }
+
+    .item-location {
+      font-style: italic;
+      color: #777;
+      font-size: 9.5pt;
+    }
+
+    .item ul {
+      margin-top: 4px;
+      padding-left: 18px;
+    }
+
+    .item ul li {
+      font-size: 10pt;
+      color: #333;
+      margin-bottom: 2px;
+      line-height: 1.45;
+    }
+
+    /* ─── Skills ─── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 4px 12px;
+    }
+
+    .skills-grid .skill-label {
+      font-weight: 600;
+      font-size: 10pt;
+      color: #1a1a2e;
+    }
+
+    .skills-grid .skill-value {
+      font-size: 10pt;
+      color: #333;
+    }
+
+    /* ─── Projects ─── */
+    .project-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .project-tech {
+      font-size: 9pt;
+      color: #2563eb;
+      font-weight: 500;
+    }
+
+    /* ─── Print ─── */
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .resume {
+        padding: 0.4in 0.5in;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+
+    <!-- ─── HEADER ─── -->
+    <div class="header">
+      <h1>VIGNESH P</h1>
+      <div class="tagline">Associate Developer · AI & Full Stack Engineer</div>
+      <div class="contact-row">
+        <span><a href="mailto:vigneshp140605@gmail.com">vigneshp140605@gmail.com</a></span>
+        <span>Coimbatore, Tamil Nadu</span>
+        <span><a href="https://www.linkedin.com/in/vignesh-p-35501034b/">linkedin.com/in/vignesh-p</a></span>
+        <span><a href="https://github.com/vicky9790">github.com/vicky9790</a></span>
+      </div>
+    </div>
+
+    <!-- ─── SUMMARY ─── -->
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <p style="font-size:10pt; color:#333; line-height:1.5;">
+        Associate Developer at ZoflowX (Zoho Partner) with expertise in AI-powered full-stack development. 
+        Skilled in building scalable web applications using React, Node.js, Express, and MongoDB. 
+        Experienced in integrating LLMs, generative AI APIs, and Zoho ecosystem products to deliver 
+        intelligent automation solutions for business clients. Strong foundation in MERN stack, RESTful API 
+        design, and modern frontend engineering.
+      </p>
+    </div>
+
+    <!-- ─── EXPERIENCE ─── -->
+    <div class="section">
+      <div class="section-title">Professional Experience</div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Associate Developer</span>
+          <span class="item-date">Jun 2026 – Present</span>
+        </div>
+        <div class="item-subtitle">ZoflowX — Zoho Partner <span class="item-location">· India</span></div>
+        <ul>
+          <li>Developing AI-driven features and intelligent automation workflows, leveraging LLMs and generative AI APIs to enhance business applications.</li>
+          <li>Building and maintaining full-stack web applications using modern frameworks (React, Node.js), ensuring end-to-end delivery from UI to backend services.</li>
+          <li>Integrating Zoho ecosystem products (CRM, Creator, Catalyst) with custom solutions, streamlining client operations through API-driven architectures.</li>
+          <li>Collaborating with cross-functional teams to architect scalable, production-grade systems that solve real-world business challenges.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">MERN Stack Development Intern</span>
+          <span class="item-date">Jun 2025 – May 2026</span>
+        </div>
+        <div class="item-subtitle">Besant Technologies <span class="item-location">· Coimbatore, TN</span></div>
+        <ul>
+          <li>Built dynamic and reusable React.js components with state management using hooks, delivering responsive UIs across device formats.</li>
+          <li>Designed and implemented RESTful APIs using Node.js and Express.js, handling authentication, routing, and CRUD operations.</li>
+          <li>Worked with MongoDB to design flexible data schemas, write aggregation queries, and manage collections for real-world application features.</li>
+          <li>Integrated frontend and backend systems end-to-end, debugging API responses and ensuring smooth data flow across the full MERN stack.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Web Developer Intern</span>
+          <span class="item-date">Dec 2024 – Feb 2025</span>
+        </div>
+        <div class="item-subtitle">Novi Tech <span class="item-location">· Coimbatore, TN</span></div>
+        <ul>
+          <li>Developed 15+ highly responsive interface components in React.js, optimizing responsiveness across mobile and tablet formats.</li>
+          <li>Engineered secure and optimized RESTful APIs with Node.js and Express.js, connecting relational database structures.</li>
+          <li>Improved database query performance through indexing, schema optimizations, and query profiling across MySQL and MongoDB.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ─── TECHNICAL SKILLS ─── -->
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-grid">
+        <span class="skill-label">Frontend</span>
+        <span class="skill-value">React.js, JavaScript (ES6+), HTML5, CSS3, TailwindCSS</span>
+        <span class="skill-label">Backend</span>
+        <span class="skill-value">Node.js, Express.js, RESTful APIs, Python</span>
+        <span class="skill-label">Databases</span>
+        <span class="skill-value">MongoDB, MySQL</span>
+        <span class="skill-label">AI / ML</span>
+        <span class="skill-value">Google Gemini API, LLM Integration, Machine Learning, Prompt Engineering</span>
+        <span class="skill-label">Zoho Stack</span>
+        <span class="skill-value">Zoho CRM, Zoho Creator, Zoho Catalyst, Zoho Deluge</span>
+        <span class="skill-label">Tools</span>
+        <span class="skill-value">Git, GitHub, VS Code, Postman, Vite, Vercel</span>
+        <span class="skill-label">Languages</span>
+        <span class="skill-value">Java, Data Structures & Algorithms</span>
+      </div>
+    </div>
+
+    <!-- ─── PROJECTS ─── -->
+    <div class="section">
+      <div class="section-title">Key Projects</div>
+
+      <div class="item">
+        <div class="project-title-row">
+          <span class="item-title">Om Vilas Condiments — E-Commerce Platform</span>
+          <span class="project-tech">React · Node.js · MongoDB · Express · JWT</span>
+        </div>
+        <ul>
+          <li>Full-stack MERN e-commerce with secure authentication, admin tracking panel, and manual UPI payment gateway.</li>
+          <li>Designed glassmorphic product catalog with responsive ordering workflow and real-time order management.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="project-title-row">
+          <span class="item-title">Vicky's Restaurant — Order Management System</span>
+          <span class="project-tech">React · Node.js · Express · MySQL</span>
+        </div>
+        <ul>
+          <li>Built interactive menu with instant search, cart functionality, and real-time food order tracking dashboard.</li>
+          <li>Designed relational schema for customer bookings, menu updates, and order processing workflows.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="project-title-row">
+          <span class="item-title">AI Goal Generator</span>
+          <span class="project-tech">Python · Gemini API · React · Node.js</span>
+        </div>
+        <ul>
+          <li>LLM-powered application generating customized periodic goals with interactive timeline UI for milestone tracking.</li>
+          <li>Automated prompt-driven personal journaling with AI-generated insights dashboard.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="project-title-row">
+          <span class="item-title">Smart Attendance System</span>
+          <span class="project-tech">Node.js · Express · MongoDB · JWT</span>
+        </div>
+        <ul>
+          <li>Backend-centric attendance automation with secure session authentication and RESTful APIs for course/student management.</li>
+          <li>Optimized query designs for high-speed record generation, eliminating manual classroom roll-calls.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ─── EDUCATION ─── -->
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Bachelor of Engineering — Computer Science</span>
+          <span class="item-date">Graduated 2025</span>
+        </div>
+        <div class="item-subtitle">Arjun College of Technology <span class="item-location">· Coimbatore, TN</span></div>
+        <ul>
+          <li>CGPA: 8.1 / 10 — Focus on full-stack development, data structures, and scalable application design.</li>
+          <li>Capstone: Smart Village 1.1 — Community-driven digital infrastructure project.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

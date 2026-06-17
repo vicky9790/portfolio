@@ -4,6 +4,34 @@ import './Experience.css';
 
 const experienceData = [
   {
+    role: "Associate Developer",
+    company: "ZoflowX — Zoho Partner",
+    location: "India",
+    duration: "Jun 2026 - Present",
+    type: "Full-time",
+    summary: "Building AI-powered full-stack solutions and Zoho integrations, delivering intelligent automation and scalable web applications for diverse business clients.",
+    bullets: [
+      "Developing AI-driven features and intelligent automation workflows, leveraging LLMs and generative AI APIs to enhance business applications.",
+      "Building and maintaining full-stack web applications using modern frameworks, ensuring end-to-end delivery from UI to backend services.",
+      "Integrating Zoho ecosystem products (CRM, Creator, Catalyst) with custom solutions, streamlining client operations through API-driven architectures.",
+      "Collaborating with cross-functional teams to architect scalable, production-grade systems that solve real-world business challenges."
+    ]
+  },
+  {
+    role: "MERN Stack Development Intern",
+    company: "Besant Technologies",
+    location: "Coimbatore, TN",
+    duration: "Jun 2025 - May 2026",
+    type: "Internship",
+    summary: "Developed full-stack MERN applications, gaining hands-on experience building scalable web products from frontend to backend.",
+    bullets: [
+      "Built dynamic and reusable React.js components with state management using hooks, delivering responsive UIs across device formats.",
+      "Designed and implemented RESTful APIs using Node.js and Express.js, handling authentication, routing, and CRUD operations.",
+      "Worked with MongoDB to design flexible data schemas, write aggregation queries, and manage collections for real-world application features.",
+      "Integrated frontend and backend systems end-to-end, debugging API responses and ensuring smooth data flow across the full MERN stack."
+    ]
+  },
+  {
     role: "Web Developer Intern",
     company: "Novi Tech",
     location: "Coimbatore, TN",
@@ -14,20 +42,6 @@ const experienceData = [
       "Developed 15+ highly responsive interface components in React.js, optimizing responsiveness across mobile/tablet formats.",
       "Engineered secure and optimized RESTful APIs with Node.js and Express.js, connecting relational database structures.",
       "Improved database query performance through indexing, schema optimizations, and query profiling across MySQL and MongoDB."
-    ]
-  },
-  {
-    role: "MERN Stack Development Intern",
-    company: "Besant Technologies",
-    location: "Coimbatore, TN",
-    duration: "Jun 2026 - Present",
-    type: "Internship",
-    summary: "Developed full-stack MERN applications, gaining hands-on experience building scalable web products from frontend to backend.",
-    bullets: [
-      "Built dynamic and reusable React.js components with state management using hooks, delivering responsive UIs across device formats.",
-      "Designed and implemented RESTful APIs using Node.js and Express.js, handling authentication, routing, and CRUD operations.",
-      "Worked with MongoDB to design flexible data schemas, write aggregation queries, and manage collections for real-world application features.",
-      "Integrated frontend and backend systems end-to-end, debugging API responses and ensuring smooth data flow across the full MERN stack."
     ]
   }
 ];

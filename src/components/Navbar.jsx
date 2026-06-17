@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import resumePdf from '../assets/Vignesh_mernstack.pdf';
+import resumePdf from '../assets/Vignesh_Software_Engineer.pdf';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -32,7 +32,7 @@ const Navbar = () => {
           <a href="#skills" onClick={() => setIsMobileMenuOpen(false)}>Skills</a>
           <a href="#projects" onClick={() => setIsMobileMenuOpen(false)}>Projects</a>
           <a href="#experience" onClick={() => setIsMobileMenuOpen(false)}>Experience</a>
-          <a href={resumePdf} download="Vignesh_MERN_Stack_Resume.pdf" onClick={() => setIsMobileMenuOpen(false)}>Resume</a>
+          <a href={resumePdf} download="Vignesh_P_Associate_Developer_Resume.pdf" onClick={() => setIsMobileMenuOpen(false)}>Resume</a>
           <a href="#contact" className="nav-cta" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
         </div>
       </div>

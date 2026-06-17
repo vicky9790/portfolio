@@ -12,10 +12,10 @@ const About = () => {
       <div className="about-content">
         <div className="about-text-container glass-panel reveal">
           <p className="about-text highlight">
-            I am a <strong>Full Stack Developer</strong> passionate about building real-world applications using React, Node.js, and databases. I enjoy solving problems, learning backend systems, and building scalable products.
+            I am an <strong>Associate Developer at ZoflowX (Zoho Partner)</strong>, specializing in AI-powered full-stack development. I build intelligent automation solutions, scalable web applications, and Zoho integrations that drive real business impact.
           </p>
           <p className="about-text">
-            Completed B.E. in Computer Science at Arjun College of Technology (CGPA: 8.1), with a strong focus on full-stack development and scalable application design. I have developed impactful projects including <strong>Smart Village 1.1</strong>, restaurant ordering platforms, and complete e-commerce systems.
+            Completed B.E. in Computer Science at Arjun College of Technology (CGPA: 8.1), with a strong focus on full-stack development and scalable application design. From MERN stack internships to building AI-driven business tools, I've developed impactful projects including e-commerce platforms, restaurant management systems, and LLM-powered applications.
           </p>
           <p className="about-text">
             Through practical internship experience, I've honed my capacity to write clean, modular code, design robust database architectures, and deliver highly responsive digital solutions.
@@ -39,15 +39,15 @@ const About = () => {
             <div className="detail-item">
               <div className="detail-icon"><Briefcase size={20} /></div>
               <div>
-                <span className="detail-label">Experience</span>
-                <span className="detail-value">MERN Stack Intern</span>
+                <span className="detail-label">Current Role</span>
+                <span className="detail-value">Associate Developer @ ZoflowX</span>
               </div>
             </div>
             <div className="detail-item">
               <div className="detail-icon"><Zap size={20} /></div>
               <div>
-                <span className="detail-label">Available for</span>
-                <span className="detail-value">Full-Time SWE Roles</span>
+                <span className="detail-label">Focus Areas</span>
+                <span className="detail-value">AI · Full Stack · Zoho</span>
               </div>
             </div>
           </div>
